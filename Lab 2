@@ -1,0 +1,41 @@
+**Lab 2 — VPC: Multi-AZ VPC with Public & Private Subnets**
+
+
+
+Overview/Goal:
+
+    Build a Virtual Private Cloud (VPC) spanning two Availability Zones, create public and private subnets, attach an Internet Gateway, configure route tables, and secure traffic with Network ACLs and Security Groups.
+
+In this lab, I:
+
+    1. Created a new VPC (CIDR e.g., 10.0.0.0/16)
+    
+    2. Created two Availability Zones (AZ-A, AZ-B) subnets in each AZ:
+    
+              (i) Public Subnets: 10.0.1.0/24, 10.0.3.0/24
+              
+             (ii) Private Subnets: 10.0.2.0/24, 10.0.4.0/24
+    
+    3. Created and attached an Internet Gateway (IGW) to the VPC
+    
+    4. Created route table for public subnets and associated it with the public subnets (route 0.0.0.0/0 → IGW)
+    
+    5. Configured Security Groups for EC2 instances (e.g., allow SSH from my IP to bastion host; allow HTTP from ALB)
+    
+    6. Configured Network ACLs to show stateless packet filtering (example: Deny a test port at NACL level to see effect)
+    
+    7. Launched EC2 instances into subnets and tested connectivity (public instance reachable from internet, private instance reachable only from bastion in public subnet)
+
+Skills Demonstrated:
+
+    VPC design, Subnetting across AZs, Routing, Internet Gateway, Security Groups vs NACLs, and Testing Network Connectivity
+
+Try it Yourself:
+
+    1. From Console or AWS CLI, create VPC → subnets → IGW → route tables
+  
+    2. Launch EC2 instances in public and private subnets and test connectivity via SSH and HTTP
+    
+    3. Tweak NACL and SG rules to observe traffic changes
+
+
