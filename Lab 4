@@ -1,0 +1,36 @@
+***Lab 4 — High Availability (HA) for Your Application***
+
+
+
+Overview/Goal:
+
+    Implement high availability for a web application using multi-AZ deployment, load balancing and auto-scaling (or multi-target approach as provided in the lab)
+
+In this lab, I: 
+
+    1. Deployed the application across multiple Availability Zones (EC2 instances in different AZs or multiple targets behind a load balancer)
+    
+    2. Set up an Elastic Load Balancer (Application Load Balancer) and target group, registered instances
+    
+    3. Configured Auto Scaling Group with minimum and maximum instance counts and scale policies (e.g., based on CPU or request count)
+    
+    4. Configured health checks on the ALB to remove unhealthy instances automatically
+    
+    5. Verified HA behavior by:
+    
+              (i) Simulating instance failure (stop instance) and observing requests routed to healthy instances
+              
+             (ii) Generating traffic to test scaling behavior 
+    
+    6. Optionally configured RDS or DynamoDB (managed services) across AZs for database HA if included
+
+Skills Demonstrated:
+
+    Load Balancing (ALB), Auto Scaling, Multi-AZ Deployment Patterns, Health Checks, and Basic Resilience Testing
+
+Try it Yourself:
+
+    1. Create ALB and target group, launch EC2 instances across AZs and register with target group
+    
+    2. Create Auto Scaling Group with desired scaling policies and verify automatic replacement of unhealthy instances
+
