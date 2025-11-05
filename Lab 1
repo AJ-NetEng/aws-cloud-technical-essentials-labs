@@ -1,5 +1,7 @@
 Lab 1 — IAM: Users, Groups, and Policies
 
+
+
 Overview/Goal:
 
     Understand AWS Identity and Access Management (IAM) by creating users and groups, inspecting and applying policies, and testing sign-in and permission behavior
