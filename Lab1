@@ -1,0 +1,19 @@
+Lab 1 — IAM: Users, Groups, and Policies
+
+Overview/Goal
+
+    Understand AWS Identity and Access Management (IAM) by creating users and groups, inspecting and applying policies, and testing sign-in and permission behavior
+
+For this lab, I:
+
+    Created IAM groups (e.g., Developers, Admins) and IAM users (e.g., alice-dev, bob-admin)
+    
+    Attached managed and inline policies to groups to control service access (e.g., read-only S3, limited DynamoDB access)
+    
+    Added users to groups and verified effective permissions via the AWS Management Console
+    
+    Located and used the account-specific IAM Sign-in URL for console sign-in testing
+    
+    Experimented with policy changes and observed how they affected service access (DENY vs ALLOW precedence)
+    
+    Cleaned up by removing test users/groups and policies
