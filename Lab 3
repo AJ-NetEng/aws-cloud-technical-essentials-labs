@@ -1,0 +1,36 @@
+***Lab 3 — Web Application Integration: Amazon S3 + DynamoDB***
+
+
+
+Overview/Goal:
+
+    Configure a simple web application to use Amazon S3 for storing static assets/files and Amazon DynamoDB for storing metadata or application data
+
+To complete this lab, I:
+
+    1. Created an S3 bucket (with a unique name, bucket policies and appropriate permissions)
+    
+    2. Enabled (optional) static website hosting or set bucket CORS if needed for client access
+    
+    3. Created a DynamoDB table (define primary key, e.g., id string) to store metadata for uploaded files or app data
+    
+    4. Deployed a minimal sample web application (could be static front-end + small Lambda or EC2 backend) and configured it to:
+    
+                 (i) Upload file to S3 and store file metadata (filename, S3 key, timestamp) into DynamoDB
+                  
+                (ii) Retrieve items from DynamoDB to display in the UI
+    
+    5. Configured IAM role/policy for the application granting least privilege to S3 and DynamoDB 
+
+Skills Demonstrated:
+
+    S3 Usage, DynamoDB Basic Operations, IAM Least-privilege for Application Roles, and Integration of Storage + NoSQL Database for Web Apps
+
+Try it Yourself:
+
+    1. Create S3 bucket and DynamoDB table via Console/CLI
+    
+    2. Configure IAM role/policy for the app
+    
+    3. Run provided sample script to upload file and insert metadata, then verify via console
+
